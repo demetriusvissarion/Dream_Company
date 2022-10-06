@@ -1,0 +1,183 @@
+/* roboto-mono-regular - latin */
+@font-face {
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/roboto-mono-v22-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-mono-v22-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+  
+html {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.main_content {
+    position: absolute;
+    top: 5.3125rem;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    overflow-y:scroll;   
+    top: 5.3125rem; 
+}
+
+.center {
+    text-align: center;
+}
+
+.image-container {
+    overflow: hidden;
+    margin: 0;
+    text-align: center;
+    background-repeat:no-repeat;
+    display: block;  
+    max-width: 100%;  
+    object-fit: fill;
+}
+
+.image-container img {
+    display: block;
+    height: 65%;
+    width: 90%;
+    margin: 0;
+    text-align: center;
+    background-repeat:no-repeat;
+}
+
+@media only screen and (max-width: 760px) {
+    .main-content {
+      top: 2.5625rem;
+    }
+  }
+
+/* Header */
+
+header {
+    position: fixed;
+    width: 100%;
+    border-bottom: solid 1px #c6c1c1;
+    background-color: rgba(24, 156, 166, 0.891);
+    z-index: 100;
+}
+  
+header .content {
+  display: flex;
+  align-items: center;
+  padding: 1.875rem;
+}
+  
+header .logo {
+  flex: 1; 
+  color: #4A4A4A;  
+  font-size: 1.5rem;  
+  font-family: 'roboto-mono-regular', sans-serif; 
+  text-decoration: none;  
+}
+  
+header nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+  
+nav li {
+  padding-left: 3.5rem;
+}
+  
+nav a {
+  vertical-align: bottom;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #4a4a4a;
+  text-decoration: none;
+}
+  
+header .icon {
+  width: 1rem;
+  padding-left: 0.75rem;
+}
+  
+header .mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 760px) {
+    header .desktop {
+      display: none;
+    }
+  
+    header .mobile {
+      display: block;
+      width: 100%;
+    }
+  
+    header .content {
+      padding: .5rem 0;
+    }
+  
+    header .mobile ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+    }
+  
+    header .mobile li {
+      padding: 0;
+    }
+  
+    header .mobile .button {
+      padding: .1875rem .5rem;
+      background-color: #9dc20b;
+      line-height: 1.6;
+      color: white;
+    }
+}
+
+/* Sign Up Section */
+
+#sign-up-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 42.75rem;
+    background-image: url("./resources/images/banner.jpg");
+    background-position: bottom;
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+
+
+
+
+
+/* Footer */
+
+footer {
+    background-color: #9b9b9b;
+    padding: 1.5rem 2rem;
+}
+  
+.footer_content {
+    color: white;
+    display: flex;
+    font-size: .75rem;
+}
+  
+footer .copyright {
+    flex-grow: 1;
+}
+  
+@media only screen and (min-width: 760px) {
+    footer .content {
+      font-size: .625rem;
+    }
+}
+
+
